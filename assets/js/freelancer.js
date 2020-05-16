@@ -61,3 +61,8 @@
   });
 
 })(jQuery); // End of use strict
+
+// YEAR
+var d = new Date();
+var n = d.getFullYear();
+document.getElementById("yearnya").innerHTML = n;
