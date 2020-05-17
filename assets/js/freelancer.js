@@ -70,6 +70,7 @@ document.getElementById("yearnya").innerHTML = n;
 var btn = document.getElementById('sendMessageButton');
 var spinner = document.getElementById('spinner');
 var message = document.getElementById("messagenya");
+var reset = document.getElementById("contactForm");
 message.style.transition = "all 0.3s";
 spinner.style.transition = "all 0.3s";
 message.style.opacity = "0";
@@ -81,5 +82,7 @@ btn.addEventListener("click", function(){
     }, 2000);
     setTimeout(function(){
       message.style.opacity = "1";
+      reset.reset();
     }, 2200);
 });
+
