@@ -66,3 +66,20 @@
 var d = new Date();
 var n = d.getFullYear();
 document.getElementById("yearnya").innerHTML = n;
+
+var btn = document.getElementById('sendMessageButton');
+var spinner = document.getElementById('spinner');
+var message = document.getElementById("messagenya");
+message.style.transition = "all 0.3s";
+spinner.style.transition = "all 0.3s";
+message.style.opacity = "0";
+spinner.style.display = "none";
+btn.addEventListener("click", function(){
+  spinner.style.display = "block";
+    setTimeout(function(){
+      spinner.style.display = "none";
+    }, 2000);
+    setTimeout(function(){
+      message.style.opacity = "1";
+    }, 2200);
+});
